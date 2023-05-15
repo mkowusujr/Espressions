@@ -69,6 +69,10 @@ body {
 
 .tags-section {
   @extend .bio;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 8em;
   min-height: fit-content;
   margin-bottom: 1em;
