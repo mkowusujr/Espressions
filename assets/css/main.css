@@ -206,4 +206,14 @@ form textarea {
 }
 form textarea {
   min-height: 12em;
+}
+
+.idc-right,
+#IDCColumnURLLabel,
+#IDCColumnURL {
+  display: none;
+}
+
+#idc-container-paren {
+  color: #d9dad4;
 }/*# sourceMappingURL=main.css.map */
