@@ -8,7 +8,8 @@
     "clean": "bash scripts/clean.sh",
     "mk-dist": "bash scripts/create_dist.sh",
     "cp-assets": "bash scripts/cp_assets.sh",
-    "generate-site": "node index.js"
+    "generate-site": "node index.js",
+    "deploy": "git push origin :gh-pages && git subtree push --prefix ../dist origin gh-pages"
   },
   "author": "",
   "license": "ISC",
