@@ -6,7 +6,8 @@
   <title>
     {% if title %}{{ title }} | frappy writer{% else %}{{ site.title }}{% endif %}
   </title>
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/{{ site.baseUrl }}/assets/css/main.css">
+  <script type="text/javascript" src="/{{ site.baseUrl }}/assets/js/scroll.js"></script>
 </head>
 <body>
   {% include "includes/nav.html" %}

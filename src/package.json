@@ -9,7 +9,9 @@
     "mk-dist": "bash scripts/create_dist.sh",
     "cp-assets": "bash scripts/cp_assets.sh",
     "generate-site": "node index.js",
-    "deploy": "git push origin :gh-pages && git subtree push --prefix ../dist origin gh-pages"
+    "deploy": "gh-pages --dist ../dist --branch gh-pages",
+    "build-deploy": "npm run build && npm run deploy"
+
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +22,6 @@
     "nunjucks": "^3.2.4"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }

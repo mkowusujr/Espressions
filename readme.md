@@ -1,1 +1,1 @@
-https://www.toptal.com/developers/cssminifier
+A static site generator for my writing blog.

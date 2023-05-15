@@ -50,7 +50,6 @@ function parsedMd(parsedContents, parentFolderPath, file) {
       .join(parentFolderPath, file)
       .replace(/(\\)/g, "/")
       .replace(".md", "")
-      .concat(".html"),
   };
 }
 
@@ -64,7 +63,7 @@ function parseFountain(parsedContents, parentFolderPath, file) {
       .join(parentFolderPath, file)
       .replace(/(\\)/g, "/")
       .replace(".md", "")
-      .replace(".fountain", ".html"),
+      .replace(".fountain", ""),
   };
 }
 
@@ -86,7 +85,7 @@ function buildHtmlFiles() {
       const html = nunjucks.render(`${page.template}.njk`, data);
 
       // write to html file
-      fs.writeFileSync(`../dist/${page.location}`, html, (err) => {
+      fs.writeFileSync(`../dist/${page.location}.html`, html, (err) => {
         if (err) throw err;
         console.log("The file has been saved!");
       });
