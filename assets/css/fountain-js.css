@@ -1,8 +1,8 @@
 h2 { text-align: right; }
 h2.left-aligned { text-align: left }
 h3 { position: relative; }
-h3:before { color: #bbb; content: attr(id); font-weight: bold; left: -45px; position: absolute; }
-h3:after { color: #bbb; content: attr(id); font-weight: bold; right: -45px; position: absolute; }
+h3:before { color: #bbb; content: attr(id); font-weight: bold; left: -45px; position: absolute; z-index: -1;}
+h3:after { color: #bbb; content: attr(id); font-weight: bold; right: -45px; position: absolute; z-index: -1;}
 
 div.dialogue { margin-left: auto; margin-right: auto; width: 90%; margin-bottom: 1em;}
 div.dialogue h4 { margin-bottom: 0; text-align: center; }
