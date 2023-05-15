@@ -1,0 +1,19 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: $body;
+	min-height: 100vh;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+svg {
+	align-items: end;
+}

@@ -1,0 +1,39 @@
+h1, h2, h3, h4, p, li, a {
+	font-size: large;
+}
+
+h1, h2 {
+	line-height: 1.5;
+	margin-bottom: 1em;
+}
+
+p, li {
+	line-height: 1.5;
+}
+
+
+p {
+	margin-bottom: 1em;
+}
+li {
+	margin-left: 2em;
+	text-indent: 1em;
+}
+
+
+h1,h2, h3, a, p, li {
+	color: $text;
+}
+h4 {
+	color: $sp-text;
+}
+
+::selection {
+  background: $highlight;
+  border-radius: 0.5em;
+  color: $highlight-text;
+}
+
+a:hover {
+	color: $hover-text;
+}

@@ -1,0 +1,11 @@
+{% if tags %}
+<div class="tags-section">
+	<h1>Tags</h1>
+	{% for tag in page.tags %}
+	<span class="tag">
+		{{ tag }}
+		<a href="/{{ tag_name }}"><code class="highligher-rouge"><nobr>#{{ tag_name }}</nobr></code>&nbsp;</a>
+	</span>
+	{% endfor %}
+</div>
+{% endif %}

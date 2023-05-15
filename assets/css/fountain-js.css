@@ -1,0 +1,27 @@
+h2 { text-align: right; }
+h2.left-aligned { text-align: left }
+h3 { position: relative; }
+h3:before { color: #bbb; content: attr(id); font-weight: bold; left: -45px; position: absolute; }
+h3:after { color: #bbb; content: attr(id); font-weight: bold; right: -45px; position: absolute; }
+
+div.dialogue { margin-left: auto; margin-right: auto; width: 90%; margin-bottom: 1em;}
+div.dialogue h4 { margin-bottom: 0; text-align: center; }
+div.dialogue p.parenthetical { margin-bottom: 0; margin-top: 0; text-align: center;}
+div.dialogue p { margin-bottom: 0; margin-top: 0; }
+
+div.dual-dialogue { margin: 2em 0 0.9em 2%; width: 95%; }
+div.dual-dialogue div.dialogue { display: inline-block; margin: 0; width: 45%; }
+div.dual-dialogue div.dialogue h4 { margin-top: 0;}
+div.dual-dialogue div.dialogue.right { float: right; }
+
+p { }
+p.centered { text-align: center; width: 92.5%; }
+
+p.section { color: #bbb; margin-left: -30px; }
+p.synopsis { color: #bbb; margin-left: -20px; }
+
+span.italic { font-style: italic; }
+span.bold { font-weight: bold; }
+span.underline { text-decoration: underline; }
+
+br { margin-bottom: 1em; }
