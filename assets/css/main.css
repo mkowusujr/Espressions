@@ -129,10 +129,6 @@ body {
 }
 
 .tags-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
   margin-top: 8em;
   min-height: -moz-fit-content;
   min-height: fit-content;
@@ -152,6 +148,12 @@ body {
 }
 .tags-section .tag:hover a {
   color: #b4b997;
+}
+.tags-section .tags-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 header {
