@@ -142,6 +142,8 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   align-items: center;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 .tags-section .tag:hover {
   background-color: #637963;
@@ -153,7 +155,6 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 header {

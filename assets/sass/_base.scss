@@ -79,6 +79,8 @@ body {
     border-radius: 0.5em;
     width: fit-content;
     align-items: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     &:hover {
       background-color: $hover-tag;
       a {
@@ -90,7 +92,6 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 }
 
