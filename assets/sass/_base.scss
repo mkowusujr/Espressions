@@ -17,7 +17,7 @@
     font-size: medium;
   }
   header {
-    top: 3em !important;
+    top: 2.8em !important;
     background-color: #3f4d48 !important;
   }
 }
@@ -73,6 +73,7 @@ body {
   @extend .bio;
   margin-top: 1em;
   min-height: fit-content;
+  margin-bottom: 1em;
   .tag {
     background-color: $tag;
     padding: 0.5em;
