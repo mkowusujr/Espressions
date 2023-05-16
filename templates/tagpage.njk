@@ -4,10 +4,12 @@
 <div class="list">
 	<ul>
 		{% for p in site.pages %}
-		{% if p.tags in tag %}
+		{% for t in p.tags %}
+		{% if tag == t %}
 		<li><a href="/{{ site.baseUrl }}/{{ p.location }}">{{ p.title }} (<span class="date">{{ p.date  }}</span>)</a><br>
 		</li>
 		{% endif %}
+		{% endfor %}
 		{% endfor %}
 	</ul>
 </div>

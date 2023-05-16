@@ -2,7 +2,7 @@
 template: page
 title: Take My Food Too!
 date: 09/04/2019
-tags: shorts
+tags: ['shorts']
 ---
 
 My nephew sat thereon at the glass dining table. He was like an innocent chipmunk. His puffy round cheeks, moved in circular motions as he consumed his golden brown pancakes. Kofi hadn’t been eating for long. The hotcakes covered plate like a blanket on a bed, and white puffy steam gushed up the hotcakes. He saw I had been admiring him, and he wasn't pleased. Kofi was always running around the house and asking me questions about my personal life. My nephew was a happy-go-lucky kid, but that went out the window when I came.

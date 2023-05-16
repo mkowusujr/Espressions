@@ -20,7 +20,7 @@ svg {
 }
 
 h1, h2, h3, h4, p, li, a {
-  font-size: large;
+  font-size: medium;
 }
 
 h1, h2 {
@@ -66,8 +66,8 @@ a:hover {
 }
 
 .main-content {
-  margin: 4em;
-  margin-top: 5.5em;
+  margin: 1em;
+  margin-top: 4.5em;
 }
 
 @media screen and (min-width: 830px) {
@@ -129,7 +129,7 @@ body {
 }
 
 .tags-section {
-  margin-top: 8em;
+  margin-top: 1em;
   min-height: -moz-fit-content;
   min-height: fit-content;
   margin-bottom: 1em;
@@ -142,12 +142,23 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   align-items: center;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 .tags-section .tag:hover {
   background-color: #637963;
 }
 .tags-section .tag:hover a {
   color: #b4b997;
+}
+.tags-section .tags-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.no-bkgrd-clr {
+  background-color: #516157;
 }
 
 header {
@@ -181,8 +192,9 @@ header p {
 }
 
 hr {
-  margin-top: 6em;
+  margin-top: 3em;
   margin-bottom: 2em;
+  color: #d9dad4;
 }
 
 form {
@@ -199,4 +211,19 @@ form textarea {
 }
 form textarea {
   min-height: 12em;
+}
+
+.idc-right,
+#IDCColumnURLLabel,
+#IDCColumnURL,
+#idc-container .idc-right {
+  display: none;
+}
+
+#idc-container-paren,
+#idc-container div div div,
+#idc-container .idc-c .idc-time a,
+#idc-container .idc-c-m .idc-form-info,
+#idc-container .idc-message {
+  color: #d9dad4 !important;
 }/*# sourceMappingURL=main.css.map */

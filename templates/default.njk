@@ -4,8 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>
-    {% if title %}{{ title }} | frappy writer{% else %}{{ site.title }}{% endif %}
+    {% if title %}{{ title }} | {{ site.title }} {% else %}{{ site.title }}{% endif %}
   </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="/{{ site.baseUrl }}/assets/images/favicon.ico">
   <link rel="stylesheet" href="/{{ site.baseUrl }}/assets/css/main.css">
   <script type="text/javascript" src="/{{ site.baseUrl }}/assets/js/scroll.js"></script>
 </head>
@@ -18,8 +20,10 @@
     {% block content %}{% endblock %}
     <aside>
       {% include "includes/tags.html" %}
+      {% include "includes/all-tags.html" %}
       {% include "includes/bio.html" %}
     </aside>
+    {% block footer %}{% endblock %}
   </div>
 
   {% include "includes/footer.html" %}

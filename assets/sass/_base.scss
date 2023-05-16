@@ -1,6 +1,6 @@
 .main-content {
-  margin: 4em;
-  margin-top: 5.5em;
+  margin: 1em;
+  margin-top: 4.5em;
 }
 // Styles for screens bigger than 830px
 @media screen and (min-width: 830px) {
@@ -69,7 +69,7 @@ body {
 
 .tags-section {
   @extend .bio;
-  margin-top: 8em;
+  margin-top: 1em;
   min-height: fit-content;
   margin-bottom: 1em;
   .tag {
@@ -79,6 +79,8 @@ body {
     border-radius: 0.5em;
     width: fit-content;
     align-items: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     &:hover {
       background-color: $hover-tag;
       a {
@@ -86,6 +88,15 @@ body {
       }
     }
   }
+  .tags-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.no-bkgrd-clr {
+  background-color: $body;
 }
 
 header {
@@ -120,8 +131,9 @@ header {
 }
 
 hr {
-  margin-top: 6em;
+  margin-top: 3em;
   margin-bottom: 2em;
+  color: $text;
 }
 
 form {

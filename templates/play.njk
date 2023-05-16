@@ -4,3 +4,8 @@
 <link rel="stylesheet" href="/{{ site.baseUrl }}/assets/css/fountain-js.css">
 {{ content | safe }}
 {% endblock %}
+
+{% block footer %}
+{% include "includes/return-to-collection.html" %}
+{% include "includes/comments.html" %}
+{% endblock %}

@@ -1,7 +1,7 @@
 {% extends "default.njk" %}
 
 {% block content %}
-{{ content }}
+{{ content | safe }}
 <h2>Pieces in this Collection</h2>
 <div class="list">
 	<ul>

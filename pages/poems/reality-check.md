@@ -2,7 +2,7 @@
 template: page
 title: Reality Check
 date: 02/04/2022
-tags: poems
+tags: ['poems']
 poem_collection: humility
 ---
 

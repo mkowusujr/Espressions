@@ -2,7 +2,7 @@
 template: page
 title: It's All We Got
 date: 09/04/2019
-tags: shorts
+tags: ['shorts']
 ---
 
 I stared across the barren diner table. My husband and I had just arrived, it was our first date in decades ever since the kids came into the picture. My husband was only in his late thirties but he looked twice that. We aren’t super wealthy, heck we came barely make the rent payments on time. We both came from bad neighborhoods when were young. Everyone around us was either poor or homeless or just void of spirit and happiness. The problems of life and money sucked out all the joy out of life. It’s hard to enjoy yourself when the threat of an eviction note is constantly looming over your head. 

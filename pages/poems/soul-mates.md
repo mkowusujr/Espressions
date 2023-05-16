@@ -2,7 +2,7 @@
 template: page
 title: Soul Mates
 date: 03/28/2023
-tags: poems
+tags: ['poems']
 ---
 
 I usually thought that everyone had a special person made for them  

@@ -2,7 +2,7 @@
 template: page
 title: Intro to Galanthus
 date: 02/06/2022
-tags: collections
+tags: ['collections']
 ---
 
 # The Big Idea of this Poetry Collection

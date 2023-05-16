@@ -2,7 +2,7 @@
 template: page
 title: The Chase
 date: 03/28/2023
-tags: shorts
+tags: ['shorts']
 ---
 
 Andrea had finally managed to escape the office with her parcel, and hid, breathing hard, behind a dumpster in an alley, and listened as her pursuers ran past, shouting orders at each other. She could barely breath from running so hard, and she was sure they could hear her gasping for air, or even her heartbeat thudding in her own ears. But no, they ran past, and Andrea was safe... for the next couple of seconds, at least.

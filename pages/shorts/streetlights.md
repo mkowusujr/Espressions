@@ -2,7 +2,7 @@
 template: page
 title: Street Lights
 date: 09/04/2019
-tags: shorts
+tags: ['shorts']
 ---
 
 I slumped down a dozen flights of steps. In my right hand, my leather brown suitcase clenched onto its life. It was quite heavy today, consuming all the tasks I was handed. You should’ve seen the mountain of documents in my tiny office. Every day I’d burn through all that paper; my work ethic was unmatched. Now it seems like my fire is flickering out. I make simple blunders, despite the fact I’ve become more robotic.

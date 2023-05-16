@@ -2,7 +2,7 @@
 template: page
 title: The Jittery Fax Machine
 date: 03/28/2023
-tags: shorts
+tags: ['shorts']
 ---
 
 “Uhm,” I say as my mind buffers and loads its next response. “Hi, Bethany. What’s wrong?” I allow the words to fall out mouth gentle like helicopter seeds. I tried to be straightforward hoping said get to a straightforward answer, but instead of a one sentence response, I got a novel. Guess this is how it feels when teachers want a one-page essay and get a packet.

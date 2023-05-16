@@ -3,7 +3,7 @@ template: collection
 title: humility - a collection of poems
 date: 03/28/2023
 collection_name: humility
-tags: collections
+tags: ['collections']
 ---
 
 # My Experience: Writing, Revisioning, and what was Frustrating

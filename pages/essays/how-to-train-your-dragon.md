@@ -2,7 +2,7 @@
 template: page
 title: How to Make the Greatest Animated Movie Ever
 date: 02/20/2022
-tags: essays
+tags: ['essays']
 ---
 
 # How to Make the Greatest Animated Movie Ever
