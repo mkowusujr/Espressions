@@ -1,6 +1,6 @@
 .main-content {
-  margin: 4em;
-  margin-top: 5.5em;
+  margin: 1em;
+  margin-top: 4.5em;
 }
 // Styles for screens bigger than 830px
 @media screen and (min-width: 830px) {
@@ -69,7 +69,7 @@ body {
 
 .tags-section {
   @extend .bio;
-  margin-top: 8em;
+  margin-top: 1em;
   min-height: fit-content;
   margin-bottom: 1em;
   .tag {
