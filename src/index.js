@@ -86,41 +86,49 @@ function buildHtmlFiles() {
   pages
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .forEach((page) => {
-      if (page.draft != true) {
-        // build template
-        nunjucks.configure("../templates");
-        let data = {
-          ...page,
-          site: { ...siteConfig, pages: pages, tags: tags },
-        };
-        const html = nunjucks.render(`${page.template}.njk`, data);
+      // build template
+      nunjucks.configure("../templates");
+      let data = {
+        ...page,
+        site: {
+          ...siteConfig,
+          pages: pages,
+          tags: tags,
+        },
+      };
 
-        // write to html file
-        fs.writeFileSync(`../dist/${page.location}.html`, html, (err) => {
-          if (err) throw err;
-          console.log("The file has been saved!");
-        });
-      }
+      if (page.title == "Blog")
+        data = { ...data, pagesByYear: groupPagesByYear() };
+
+      const html = nunjucks.render(`${page.template}.njk`, data);
+
+      // write to html file
+      fs.writeFileSync(`../dist/${page.location}.html`, html, (err) => {
+        if (err) throw err;
+        console.log("The file has been saved!");
+      });
     });
 
-  Array.from(tags).sort().forEach((tag) => {
-    // build template
-    nunjucks.configure("../templates");
-    let data = {
-      tag: tag,
-      title: tag,
-      display_date: false,
-      site: { ...siteConfig, pages: pages, tags: tags },
-    };
-    const html = nunjucks.render("tagpage.njk", data);
+  Array.from(tags)
+    .sort()
+    .forEach((tag) => {
+      // build template
+      nunjucks.configure("../templates");
+      let data = {
+        tag: tag,
+        title: tag,
+        display_date: false,
+        site: { ...siteConfig, pages: pages, tags: tags },
+      };
+      const html = nunjucks.render("tagpage.njk", data);
 
-    // write to html file
-    createFolderIfNotExists("../dist/tags");
-    fs.writeFileSync(`../dist/tags/${tag}.html`, html, (err) => {
-      if (err) throw err;
-      console.log("The file has been saved!");
+      // write to html file
+      createFolderIfNotExists("../dist/tags");
+      fs.writeFileSync(`../dist/tags/${tag}.html`, html, (err) => {
+        if (err) throw err;
+        console.log("The file has been saved!");
+      });
     });
-  });
 }
 
 function generateRssFeed() {
@@ -141,23 +149,21 @@ function generateRssFeed() {
   const rss = new feed.Feed(feedOptions);
 
   pages.forEach((p) => {
-    if (p.draft != true) {
-      rss.addItem({
-        title: p.title,
-        id: `${siteConfig.url}${p.location}`,
-        link: `${siteConfig.url}${p.location}`,
-        description: p.description ?? "",
-        content: p.content,
-        author: [
-          {
-            name: siteConfig.author,
-            email: siteConfig.email,
-            link: siteConfig.aboutLink,
-          },
-        ],
-        date: new Date(p.date),
-      });
-    }
+    rss.addItem({
+      title: p.title,
+      id: `${siteConfig.url}${p.location}`,
+      link: `${siteConfig.url}${p.location}`,
+      description: p.description ?? "",
+      content: p.content,
+      author: [
+        {
+          name: siteConfig.author,
+          email: siteConfig.email,
+          link: siteConfig.aboutLink,
+        },
+      ],
+      date: new Date(p.date),
+    });
   });
 
   fs.writeFileSync(
@@ -167,8 +173,24 @@ function generateRssFeed() {
   );
 }
 
+function groupPagesByYear() {
+  let groupByYear = pages.reduce((group, page) => {
+    const { year } = page;
+    group[year] = group[year] ?? [];
+    group[year].push(page);
+    return group;
+  }, {});
+  delete groupByYear["2001"];
+  groupByYear = Object.keys(groupByYear)
+    .map((key) => [key, groupByYear[key]])
+    .reverse();
+  return groupByYear;
+}
+
 function generateSite() {
   readMarkdownFiles("../pages");
+  pages = pages.filter((p) => p.draft != true);
+  groupPagesByYear();
   buildHtmlFiles();
   generateRssFeed();
 }

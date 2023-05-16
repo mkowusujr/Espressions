@@ -2,7 +2,10 @@
 
 {% block content %}
 	<h1>All Posts</h1>
-	{% for year, posts in site.pages | groupby("year") %}
+	{# {% set pages = site.pages | groupby("year") %}
+	{% set pages = pages | reverse %} #}
+
+	{% for year, posts in  pagesByYear %}
 		{% if year != 2001 %}
 		<h1>{{ year }}</h1>
 		<ul>
