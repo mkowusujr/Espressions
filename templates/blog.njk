@@ -1,0 +1,17 @@
+{% extends "default.njk" %}
+
+{% block content %}
+	<h1>All Posts</h1>
+	{% for year, posts in site.pages | groupby("year") %}
+		{% if year != 2001 %}
+		<h1>{{ year }}</h1>
+		<ul>
+			<div class="list">
+				{% for post in posts %}
+					<li><a href="/{{ site.baseUrl }}/{{ post.location }}">{{ post.title }} (<span class="date">{{ post.date }}</span>)</a></li>
+				{% endfor %}
+			</div>
+		</ul>
+		{% endif %}
+	{% endfor %}
+{% endblock %}

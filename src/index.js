@@ -86,22 +86,24 @@ function buildHtmlFiles() {
   pages
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .forEach((page) => {
-      // build template
-      nunjucks.configure("../templates");
-      let data = {
-        ...page,
-        site: { ...siteConfig, pages: pages, tags: tags },
-      };
-      const html = nunjucks.render(`${page.template}.njk`, data);
+      if (page.draft != true) {
+        // build template
+        nunjucks.configure("../templates");
+        let data = {
+          ...page,
+          site: { ...siteConfig, pages: pages, tags: tags },
+        };
+        const html = nunjucks.render(`${page.template}.njk`, data);
 
-      // write to html file
-      fs.writeFileSync(`../dist/${page.location}.html`, html, (err) => {
-        if (err) throw err;
-        console.log("The file has been saved!");
-      });
+        // write to html file
+        fs.writeFileSync(`../dist/${page.location}.html`, html, (err) => {
+          if (err) throw err;
+          console.log("The file has been saved!");
+        });
+      }
     });
 
-  tags.forEach((tag) => {
+  Array.from(tags).sort().forEach((tag) => {
     // build template
     nunjucks.configure("../templates");
     let data = {
@@ -139,23 +141,23 @@ function generateRssFeed() {
   const rss = new feed.Feed(feedOptions);
 
   pages.forEach((p) => {
-    // if (p.display_date != false) {
-    rss.addItem({
-      title: p.title,
-      id: `${siteConfig.url}${p.location}`,
-      link: `${siteConfig.url}${p.location}`,
-      description: p.description ?? "",
-      content: p.content,
-      author: [
-        {
-          name: siteConfig.author,
-          email: siteConfig.email,
-          link: siteConfig.aboutLink,
-        },
-      ],
-      date: new Date(p.date),
-    });
-    // }
+    if (p.draft != true) {
+      rss.addItem({
+        title: p.title,
+        id: `${siteConfig.url}${p.location}`,
+        link: `${siteConfig.url}${p.location}`,
+        description: p.description ?? "",
+        content: p.content,
+        author: [
+          {
+            name: siteConfig.author,
+            email: siteConfig.email,
+            link: siteConfig.aboutLink,
+          },
+        ],
+        date: new Date(p.date),
+      });
+    }
   });
 
   fs.writeFileSync(

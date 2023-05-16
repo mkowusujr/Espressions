@@ -1,7 +1,6 @@
 ---
-template: tagpage
-title: "Poems"
-tag: poems
+template: blog
+title: Blog
 date: 12/28/2001
 year: 2001
 display_date: false

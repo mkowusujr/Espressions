@@ -2,7 +2,8 @@
 template: page
 title: Restless Mind
 date: 03/27/2023
-tags: ['poems']
+year: 2023
+tags: ['poems', 'frustration']
 ---
 
 Sometimes I wonder if you think about me too,  
@@ -28,4 +29,4 @@ Is like rubbing a prickly cactus.
 I won’t think about you.  
 I won’t think about you.  
 I won’t think about you!  
-You don’t think about me too.  
+I know you don’t think about me too.  

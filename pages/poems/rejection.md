@@ -2,8 +2,9 @@
 template: page
 title: Rejection
 date: 02/04/2022
-tags: ['poems']
-poem_collection: Intro to Galanthus
+year: 2022
+tags: ['poems', 'frustration']
+poem_collection: intro-to-galanthus
 ---
 
 I always felt like I didn't fit in,  
@@ -12,7 +13,7 @@ This became all more clear when my brothers finally had their way.
 My people have a rigid class system,  
 If you resemble the bottom of the totem you're treated like dirt.  
 My brothers walked all over me growing up,  
-They were royalty and I was a pleasant lucky to share the same air they breathed.  
+They were royalty and I was a peasant lucky to share the same air they breathed.  
 
 Father continued to shine forth his love for me,  
 But all I felt was the cold mocks from my siblings.  

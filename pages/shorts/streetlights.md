@@ -2,6 +2,7 @@
 template: page
 title: Street Lights
 date: 09/04/2019
+year: 2019
 tags: ['shorts']
 ---
 

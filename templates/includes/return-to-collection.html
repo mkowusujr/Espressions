@@ -1,5 +1,5 @@
 {% if poem_collection %}
 <hr>
-<a href="/{{ site.baseUrl }}/collections/{{poem_collection | replace(" ", " -") | lower }}">Go back to
-	{{poem_collection}} collection</a>
+<a href="/{{ site.baseUrl }}/collections/{{poem_collection | replace(' ' ,  '-') | lower }}">Go back to
+	{{poem_collection | replace('-' , ' ') | title}} collection</a>
 {% endif %}

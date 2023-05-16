@@ -5,10 +5,9 @@
 <h2>Pieces in this Collection</h2>
 <div class="list">
 	<ul>
-		{% set sortedPages = site.pages %}
-		{% for p in sortedPages %}
+		{% for p in site.pages %}
 		{% if p.poem_collection %}
-		{% if p.poem_collection == page.collection_name %}
+		{% if p.poem_collection == collection_name %}
 		<li><a href="/{{ site.baseUrl }}/{{ p.location }}">{{ p.title }} (<span class="date">{{ p.date}}</span>)</a>
 		</li>
 		{% endif %}

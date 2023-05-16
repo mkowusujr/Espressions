@@ -2,6 +2,7 @@
 template: page
 title: Mommy, Daddy Look! I Can Ride a Bike
 date:   02/04/2022
+year: 2022
 tags: ['poems']
 poem_collection: humility
 ---
@@ -31,6 +32,6 @@ This will help you improve your balance dear"
 Slowly and steadily I had no more fears  
 As my confidence increased I stretched myself to higher levels  
 Like a child finally figuring out how to walk and run about  
-The muscle memory became ingrained and the skill was now simple and plane  
+The muscle memory became ingrained and the skill was now simple and plain  
 After all that trial and error, it clicked it was there  
-Im free now fear! I can pedal anywhere  
+I'm free now fear! I can pedal anywhere  

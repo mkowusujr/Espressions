@@ -1,7 +1,8 @@
 .idc-right,
-#IDCColumnURLLabel,
-#IDCColumnURL,
-#idc-container .idc-right {
+#IDCColumnURLLabel .idc-column,
+#idc-container .idc-right,
+#IDCColumnURL .idc-column {
+  z-index: -1;
   display: none;
 }
 
@@ -11,4 +12,15 @@
 #idc-container .idc-c-m .idc-form-info,
 #idc-container .idc-message {
   color: $text !important;
+}
+
+#idc-container div.idc-text_noresize,
+#idc-container textarea.idc-text_noresize {
+  font-size: medium;
+  color: black;
+}
+
+
+#idc-container {
+  font-size: medium;
 }

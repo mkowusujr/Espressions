@@ -20,10 +20,12 @@
     {% block content %}{% endblock %}
     <aside>
       {% include "includes/tags.html" %}
+    </aside>
+    {% block footer %}{% endblock %}
+    <aside>
       {% include "includes/all-tags.html" %}
       {% include "includes/bio.html" %}
     </aside>
-    {% block footer %}{% endblock %}
   </div>
 
   {% include "includes/footer.html" %}
