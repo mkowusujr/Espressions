@@ -14,6 +14,7 @@
   nav {
     top: 0;
     bottom: auto !important;
+    font-size: medium;
   }
   header {
     top: 3em !important;
@@ -27,6 +28,7 @@ footer {
 }
 
 nav {
+  font-size: small;
   padding-top: 1em;
   padding-bottom: 1em;
   display: flex;
@@ -71,7 +73,9 @@ body {
   @extend .bio;
   margin-top: 1em;
   min-height: fit-content;
-  margin-bottom: 1em;
+  margin-bottom: 0;
+  margin-left: 2em;
+  padding-bottom: 0;
   .tag {
     background-color: $tag;
     padding: 0.5em;
@@ -131,8 +135,8 @@ header {
   color: $hover-text;
 }
 
-hr {
-  margin-top: 3em;
+hr, #idc-container {
+  margin-top: 2em;
   margin-bottom: 2em;
   color: $text;
 }
