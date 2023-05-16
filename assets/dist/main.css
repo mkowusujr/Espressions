@@ -210,10 +210,10 @@ form textarea {
 
 .idc-right,
 #IDCColumnURLLabel,
-#IDCColumnURL {
+#IDCColumnURL, #idc-container .idc-right {
   display: none;
 }
 
-#idc-container-paren {
-  color: #d9dad4;
+#idc-container-paren, #idc-container div div div, #idc-container .idc-c .idc-time a, #idc-container .idc-c-m .idc-form-info {
+  color: #d9dad4 !important;
 }/*# sourceMappingURL=main.css.map */

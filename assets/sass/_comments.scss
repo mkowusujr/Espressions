@@ -1,9 +1,9 @@
 .idc-right,
 #IDCColumnURLLabel,
-#IDCColumnURL {
+#IDCColumnURL, #idc-container .idc-right {
   display: none;
 }
 
-#idc-container-paren {
-  color: $text;
+#idc-container-paren, #idc-container div div div, #idc-container .idc-c .idc-time a, #idc-container .idc-c-m .idc-form-info {
+  color: $text !important;
 }
