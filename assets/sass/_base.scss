@@ -18,7 +18,7 @@
   }
   header {
     top: 3em !important;
-    background-color: #3f4d48 !important
+    background-color: #3f4d48 !important;
   }
 }
 
@@ -73,9 +73,6 @@ body {
   @extend .bio;
   margin-top: 1em;
   min-height: fit-content;
-  margin-bottom: 0;
-  margin-left: 2em;
-  padding-bottom: 0;
   .tag {
     background-color: $tag;
     padding: 0.5em;
@@ -102,6 +99,9 @@ body {
 
 .no-bkgrd-clr {
   background-color: $body;
+  margin-bottom: 0;
+  margin-left: 2em;
+  padding-bottom: 0;
 }
 
 header {
@@ -124,7 +124,7 @@ header {
 }
 
 .list {
-  margin-bottom: 4em;
+  margin-bottom: 1em;
   li {
     line-height: 2.5;
   }
@@ -135,7 +135,8 @@ header {
   color: $hover-text;
 }
 
-hr, #idc-container {
+hr,
+#idc-container {
   margin-top: 2em;
   margin-bottom: 2em;
   color: $text;
