@@ -95,6 +95,10 @@ body {
   }
 }
 
+.no-bkgrd-clr {
+  background-color: $body;
+}
+
 header {
   display: block;
   padding: 0.5em;
@@ -127,7 +131,7 @@ header {
 }
 
 hr {
-  margin-top: 6em;
+  margin-top: 3em;
   margin-bottom: 2em;
   color: $text;
 }

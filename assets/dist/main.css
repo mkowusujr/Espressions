@@ -157,6 +157,10 @@ body {
   flex-wrap: wrap;
 }
 
+.no-bkgrd-clr {
+  background-color: #516157;
+}
+
 header {
   display: block;
   padding: 0.5em;
@@ -188,7 +192,7 @@ header p {
 }
 
 hr {
-  margin-top: 6em;
+  margin-top: 3em;
   margin-bottom: 2em;
   color: #d9dad4;
 }
