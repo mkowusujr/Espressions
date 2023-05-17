@@ -2,8 +2,8 @@
 #IDCColumnURLLabel .idc-column,
 #idc-container .idc-right,
 #IDCColumnURL .idc-column {
-  z-index: -1;
-  display: none;
+  z-index: -1 !important;
+  display: none !important;
 }
 
 #idc-container-paren,
@@ -23,5 +23,5 @@
 
 
 #idc-container {
-  font-size: medium;
+  font-size: medium !important;
 }
