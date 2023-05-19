@@ -2,16 +2,13 @@
 
 {% block content %}
 	<h1>All Posts</h1>
-	{# {% set pages = site.pages | groupby("year") %}
-	{% set pages = pages | reverse %} #}
-
 	{% for year, posts in  pagesByYear %}
 		{% if year != 2001 %}
 		<h1>{{ year }}</h1>
 		<ul>
 			<div class="list">
 				{% for post in posts %}
-					<li><a href="/{{ site.baseUrl }}/{{ post.location }}">{{ post.title }} (<span class="date">{{ post.date }}</span>)</a></li>
+					<li><a href="{{ post.url }}">{{ post.title }} (<span class="date">{{ post.date }}</span>)</a></li>
 				{% endfor %}
 			</div>
 		</ul>

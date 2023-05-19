@@ -18,7 +18,9 @@ function readMarkdownFiles(folderPath, parentFolderPath = "") {
     `..\\dist${currPath.replace("..\\pages", "").replace("../pages", "")}`
   );
 
-  const files = fs.readdirSync(folderPath);
+  const files = fs
+    .readdirSync(folderPath)
+    .filter((f) => !siteConfig.excludes.includes(f));
 
   for (const file of files) {
     const filePath = path.join(folderPath, file);
@@ -50,28 +52,32 @@ function parsedMd(parsedContents, parentFolderPath, file) {
   marked.setOptions({
     silent: true,
   });
-
+  fileLoc = path
+      .join(parentFolderPath, file)
+      .replace(/(\\)/g, "/")
+    .replace(".md", "")
+  
   return {
     ...parsedContents.attributes,
     content: marked.parse(parsedContents.body).replace(/(\n)/g, ""),
-    location: path
-      .join(parentFolderPath, file)
-      .replace(/(\\)/g, "/")
-      .replace(".md", ""),
+    location: fileLoc,
+    url: `/${siteConfig.attributes.baseUrl}/${fileLoc}`,
   };
 }
 
 function parseFountain(parsedContents, parentFolderPath, file) {
   let fountain = new Fountain();
+  fileLoc = path
+    .join(parentFolderPath, file)
+    .replace(/(\\)/g, "/")
+    .replace(".md", "")
+    .replace(".fountain", "");
 
   return {
     ...parsedContents.attributes,
     content: fountain.parse(parsedContents.body).html.script,
-    location: path
-      .join(parentFolderPath, file)
-      .replace(/(\\)/g, "/")
-      .replace(".md", "")
-      .replace(".fountain", ""),
+    location: fileLoc,
+    url: `/${siteConfig.attributes.baseUrl}/${fileLoc}`,
   };
 }
 
@@ -83,15 +89,16 @@ function createFolderIfNotExists(folderPath) {
 }
 
 function buildHtmlFiles() {
+  nunjucks.configure(siteConfig.templatesLoc);
+
   pages
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .forEach((page) => {
       // build template
-      nunjucks.configure("../templates");
       let data = {
         ...page,
         site: {
-          ...siteConfig,
+          ...siteConfig.attributes,
           pages: pages,
           tags: tags,
         },
@@ -112,13 +119,11 @@ function buildHtmlFiles() {
   Array.from(tags)
     .sort()
     .forEach((tag) => {
-      // build template
-      nunjucks.configure("../templates");
       let data = {
         tag: tag,
         title: tag,
         display_date: false,
-        site: { ...siteConfig, pages: pages, tags: tags },
+        site: { ...siteConfig.attributes, pages: pages, tags: tags },
       };
       const html = nunjucks.render("tagpage.njk", data);
 
@@ -188,7 +193,7 @@ function groupPagesByYear() {
 }
 
 function generateSite() {
-  readMarkdownFiles("../pages");
+  readMarkdownFiles(siteConfig.pagesLoc);
   pages = pages.filter((p) => p.draft != true);
   groupPagesByYear();
   buildHtmlFiles();

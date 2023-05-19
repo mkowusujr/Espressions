@@ -5,11 +5,11 @@
 <div class="list">
 	<ul>
 		{% set recentPages = site.pages %}
-		<li><a href="/{{ site.baseUrl }}/{{ recentPages[0].location }}">{{ recentPages[0].title }} (<span class="date">{{ recentPages[0].date }}</span>)</a></li>
-		<li><a href="/{{ site.baseUrl }}/{{ recentPages[1].location }}">{{ recentPages[1].title }} (<span class="date">{{ recentPages[1].date }}</span>)</a></li>
-		<li><a href="/{{ site.baseUrl }}/{{ recentPages[2].location }}">{{ recentPages[2].title }} (<span class="date">{{ recentPages[2].date }}</span>)</a></li>
-		<li><a href="/{{ site.baseUrl }}/{{ recentPages[3].location }}">{{ recentPages[3].title }} (<span class="date">{{ recentPages[3].date }}</span>)</a></li>
-		<li><a href="/{{ site.baseUrl }}/{{ recentPages[4].location }}">{{ recentPages[4].title }} (<span class="date">{{ recentPages[4].date }}</span>)</a></li>
+		<li><a href="{{ recentPages[0].url }}">{{ recentPages[0].title }} (<span class="date">{{ recentPages[0].date }}</span>)</a></li>
+		<li><a href="{{ recentPages[1].url }}">{{ recentPages[1].title }} (<span class="date">{{ recentPages[1].date }}</span>)</a></li>
+		<li><a href="{{ recentPages[2].url }}">{{ recentPages[2].title }} (<span class="date">{{ recentPages[2].date }}</span>)</a></li>
+		<li><a href="{{ recentPages[3].url }}">{{ recentPages[3].title }} (<span class="date">{{ recentPages[3].date }}</span>)</a></li>
+		<li><a href="{{ recentPages[4].url }}">{{ recentPages[4].title }} (<span class="date">{{ recentPages[4].date }}</span>)</a></li>
 	</ul>
 </div>
 <a style="margin-bottom: 2em" href="/{{ site.baseUrl }}/blog">View all posts</a>

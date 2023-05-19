@@ -1,9 +1,14 @@
 {
-	"title": "Espressions",
-	"baseUrl": "Espressions",
-	"description": "A platform for me to express myself",
-	"url": "https://mkowusujr.github.io/Espressions/",
-	"author": "Mathew Owusu Jr",
-	"email": "mrfriiday@gmail.com",
-	"aboutLink": "https://github.com/mkowusujr"
+	"attributes": {
+		"title": "Espressions",
+		"baseUrl": "Espressions",
+		"description": "A platform for me to express myself",
+		"url": "https://mkowusujr.github.io/Espressions/",
+		"author": "Mathew Owusu Jr",
+		"email": "mrfriiday@gmail.com",
+		"aboutLink": "https://github.com/mkowusujr"
+	},
+	"excludes": ["excludes", ".obsidian"],
+	"pagesLoc": "../pages",
+	"templatesLoc": "../templates"
 }
