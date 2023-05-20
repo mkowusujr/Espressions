@@ -2,7 +2,6 @@
 template: collection
 title: Intro to Galanthus
 date: 02/06/2022
-year: 2022
 collection_name: intro-to-galanthus
 tags: ['collections']
 ---

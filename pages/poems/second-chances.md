@@ -2,7 +2,6 @@
 template: page
 title: Second Chances
 date: 03/28/2023
-year: 2023
 tags: ['poems']
 poem_collection: intro-to-galanthus
 ---

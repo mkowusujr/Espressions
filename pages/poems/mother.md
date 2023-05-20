@@ -2,7 +2,6 @@
 template: page
 title: Mother
 date:   05/16/2023
-year: 2023
 tags: ['poems']
 poem_collection: humility
 draft: true

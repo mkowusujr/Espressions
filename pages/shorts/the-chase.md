@@ -2,19 +2,18 @@
 template: page
 title: The Chase
 date: 09/04/2019
-year: 2019
 tags: ['shorts']
 ---
 
-Andrea had finally managed to escape the office with her parcel, and hid, breathing hard, behind a dumpster in an alley, and listened as her pursuers ran past, shouting orders at each other. She could barely breath from running so hard, and she was sure they could hear her gasping for air, or even her heartbeat thudding in her own ears. But no, they ran past, and Andrea was safe... for the next couple of seconds, at least.
+Andrea had finally managed to escape the office with her parcel. She hid, breathing hard, behind a dumpster in an alley. She listened as her pursuers ran past, shouting orders at each other. She could barely breathe from running so hard. She was sure they could hear her gasping for air. Her anxiety was rising, she could even hear her heartbeat thudding in her ears. But no, they didn't hear her, they right ran past her. Andrea was safe... for the next couple of seconds, at least.
 
-She glanced down at the small item in her hands. *This is it? This is what all this is for?* Carl was going to be thrilled. She, on the other hand, was furious. She'd practically gotten herself killed, still *might* get herself killed... and for *what*? It was so senseless.
+She glanced down at the small item in her hands. *This is it? This is what all this is for?* Carl was going to be thrilled. She, on the other hand, was furious. She'd practically gotten herself killed, and still _might_ get herself killed... and for what? It was so senseless.
 
-She was strongly tempted to just take the stupid thing and throw it in the Hudson. Let Carl rage - *he* was sitting safely at home, waiting for her to do all the dirty work for him!
+She was strongly tempted to just take the stupid thing and throw it in the Hudson. *Let Carl rage - he was sitting safely at home, waiting for her to do all the dirty work for him!*
 
-Having finally caught her breath, she looked around for where to go next. Dumpster, alley, leading to streets in both directions. And a few fire escapes. She could go to the rooftops. But that was probably the first place *they* were looking.
+Having finally caught her breath, she looked around for where to go next. The dumpster alley led to streets in both directions. There were a few fire escapes that she could use to go to the rooftops of the apartments in the alleyway. But taking the fire escape was probably the first place they'd look once they caught wind of that she was in the ally.
 
-But it was either the fire escape, or the street. Or, she could just stay here behind the dumpster and hope that nobody looked there. She was still weighing those three options when she heard the footsteps. A single set of footsteps, coming down the alleyway towards her.
+But it was either the fire escape or the street. Or, she could just stay here behind the dumpster and hope that nobody looked there. She was still weighing those three options when she heard the footsteps. A single set of footsteps, coming down the alleyway towards her.
 
 Andrea figures it's too late now to run to the fire escape or the street. Not leaving in her best opinion. She zips her jacket all the way to neck length then pulls it over her nose. By now the stench of rotten leftovers and broken electronics is distracting her ability to think of an escape plan. She picked up the sounds of fingerprints on the dumpster and muffled voices, she quickly dives into the ocean of garbage out of sight. She from her rest spot she sees a crack of light piecing from a tiny opening. And just as fast as it opens it closed. They probably couldn’t hand the scent unlike Andrea, she’s lived her whole life with smelly men. From being crowded in a small two-bedroom apartment with three other athletic teenage brothers, to living with this cowardly snob Carl. 
 

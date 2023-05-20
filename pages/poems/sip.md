@@ -2,7 +2,6 @@
 template: page
 title: Sip
 date: 09/04/2019
-year: 2019
 tags: ['poems', 'heartbreak']
 ---
 

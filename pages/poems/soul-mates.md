@@ -2,7 +2,6 @@
 template: page
 title: Soul Mates
 date: 03/28/2023
-year: 2023
 tags: ['poems', 'love']
 poem_collection: intro-to-galanthus
 ---

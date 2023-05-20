@@ -2,7 +2,6 @@
 template: page
 title: Restless Mind
 date: 03/27/2023
-year: 2023
 tags: ['poems', 'frustration']
 ---
 

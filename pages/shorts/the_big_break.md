@@ -2,7 +2,6 @@
 template: page
 title: The Big Break
 date: 04/25/2022
-year: 2019
 tags: ['shorts']
 ---
 

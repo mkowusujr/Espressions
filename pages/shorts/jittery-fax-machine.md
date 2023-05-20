@@ -2,7 +2,6 @@
 template: page
 title: The Jittery Fax Machine
 date: 09/04/2019
-year: 2019
 tags: ['shorts']
 ---
 

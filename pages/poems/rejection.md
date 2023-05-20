@@ -2,7 +2,6 @@
 template: page
 title: Rejection
 date: 02/04/2022
-year: 2022
 tags: ['poems', 'frustration']
 poem_collection: intro-to-galanthus
 ---

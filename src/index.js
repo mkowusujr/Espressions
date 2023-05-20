@@ -59,6 +59,7 @@ function parsedMd(parsedContents, parentFolderPath, file) {
   
   return {
     ...parsedContents.attributes,
+    year: parsedContents.attributes.date.slice(-4),
     content: marked.parse(parsedContents.body).replace(/(\n)/g, ""),
     location: fileLoc,
     url: `/${siteConfig.attributes.baseUrl}/${fileLoc}`,
@@ -75,6 +76,7 @@ function parseFountain(parsedContents, parentFolderPath, file) {
 
   return {
     ...parsedContents.attributes,
+    year: parsedContents.attributes.date.slice(-4),
     content: fountain.parse(parsedContents.body).html.script,
     location: fileLoc,
     url: `/${siteConfig.attributes.baseUrl}/${fileLoc}`,

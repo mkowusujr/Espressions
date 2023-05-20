@@ -2,7 +2,6 @@
 template: page
 title: Mommy, Daddy Look! I Can Ride a Bike
 date:   02/04/2022
-year: 2022
 tags: ['poems']
 poem_collection: humility
 ---
